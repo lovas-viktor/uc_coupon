@@ -1,0 +1,5 @@
+services:
+  uc_coupon.order:
+    class: Drupal\uc_coupon\CouponOrderService
+    arguments: []
+
