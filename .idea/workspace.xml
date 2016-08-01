@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ce66ba-3977-4531-8694-9a1a6cb95e93" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uc_coupon.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coupon.page.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CouponAccessControlHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CouponHtmlRouteProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CouponListBuilder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Coupon.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Entity/CouponInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Entity/CouponViewsData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/CouponDeleteForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/CouponForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/CouponSettingsForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/coupon.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uc_coupon.info.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uc_coupon.links.action.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uc_coupon.links.menu.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uc_coupon.links.task.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uc_coupon.module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uc_coupon.permissions.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="uc_coupon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,13 +44,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CouponForm.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CouponForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Form/CouponForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+            <state relative-caret-position="451">
+              <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
               <folding>
                 <element signature="e#41#82#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CouponPane.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Plugin/Ubercart/CheckoutPane/CouponPane.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="e#7#94#0#PHP" expanded="true" />
+                <element signature="e#154#194#0#PHP" expanded="true" />
+                <marker date="1470074222599" expanded="true" signature="717:777" ph="SELECT coupo... " />
               </folding>
             </state>
           </provider>
@@ -91,6 +83,8 @@
         <option value="$PROJECT_DIR$/src/Entity/Coupon.php" />
         <option value="$PROJECT_DIR$/uc_coupon.module" />
         <option value="$PROJECT_DIR$/src/Form/CouponForm.php" />
+        <option value="$PROJECT_DIR$/Plugin/Ubercart/CheckoutPane/CouponPane.php" />
+        <option value="$PROJECT_DIR$/src/Plugin/Ubercart/CheckoutPane/CouponPane.php" />
       </list>
     </option>
   </component>
@@ -148,6 +142,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uc_coupon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uc_coupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uc_coupon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,12 +253,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470064447558</updated>
-      <workItem from="1470064448731" duration="7336000" />
+      <workItem from="1470064448731" duration="10018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7336000" />
+    <option name="totallyTimeSpent" value="10018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1287" y="-102" width="1294" height="1057" extended-state="0" />
@@ -372,21 +380,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/Ubercart/CheckoutPane/CouponPane.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/CouponForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+        <state relative-caret-position="451">
+          <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
           <folding>
             <element signature="e#41#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/Plugin/Ubercart/CheckoutPane/CouponPane.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="527">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#7#94#0#PHP" expanded="true" />
+            <element signature="e#154#194#0#PHP" expanded="true" />
+            <marker date="1470074222599" expanded="true" signature="717:777" ph="SELECT coupo... " />
+          </folding>
         </state>
       </provider>
     </entry>
