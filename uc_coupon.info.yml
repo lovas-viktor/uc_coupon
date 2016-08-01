@@ -1,0 +1,5 @@
+name: Discount Coupons
+type: module
+description: Allow administrators to manage store coupons
+core: 8.x
+package: Ubercart - payment

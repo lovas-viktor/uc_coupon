@@ -1,0 +1,21 @@
+# Coupon routing definition
+coupon.settings_tab:
+  route_name: coupon.settings
+  title: 'Settings'
+  base_route: coupon.settings
+entity.coupon.canonical:
+  route_name: entity.coupon.canonical
+  base_route: entity.coupon.canonical
+  title: 'View'
+
+entity.coupon.edit_form:
+  route_name: entity.coupon.edit_form
+  base_route: entity.coupon.canonical
+  title: Edit
+
+entity.coupon.delete_form:
+  route_name:  entity.coupon.delete_form
+  base_route:  entity.coupon.canonical
+  title: Delete
+  weight: 10
+

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/uc_coupon",
+  "type": "drupal-module",
+  "description": "Allow administrators to manage store coupons",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/uc_coupon",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/uc_coupon",
+    "source": "http://cgit.drupalcode.org/uc_coupon"
+  },
+  "require": { }
+}

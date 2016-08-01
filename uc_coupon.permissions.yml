@@ -1,0 +1,22 @@
+add coupon entities:
+  title: 'Create new Coupon entities'
+
+administer coupon entities:
+  title: 'Administer Coupon entities'
+  description: 'Allow to access the administration form to configure Coupon entities.'
+  restrict access: true
+
+delete coupon entities:
+  title: 'Delete Coupon entities'
+
+edit coupon entities:
+  title: 'Edit Coupon entities'
+
+access coupon overview:
+  title: 'Access the Coupon overview page'
+
+view published coupon entities:
+  title: 'View published Coupon entities'
+
+view unpublished coupon entities:
+  title: 'View unpublished Coupon entities'

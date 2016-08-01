@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains uc_coupon.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uc_coupon_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uc_coupon module.
+    case 'help.page.uc_coupon':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Allow administrators to manage store coupons') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+
+function uc_coupon_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'coupon_add_form' || $form_id == 'coupon_edit_form') {
+    $form['valid_from']['#states'] = [
+      'visible' => [
+        ':input[name="date_validation[value]"]' => ['checked' => TRUE],
+      ],
+    ];
+    $form['valid_to']['#states'] = [
+      'visible' => [
+        ':input[name="date_validation[value]"]' => ['checked' => TRUE],
+      ],
+    ];
+  }
+
+}
