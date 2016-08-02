@@ -23,21 +23,30 @@ class CouponCheckoutForm extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state) {
+  public function buildForm(array $form, FormStateInterface $form_state,$order = NULL) {
     $form['coupon_code'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Coupon code'),
       '#maxlength' => 50,
       '#size' => 64,
     ];
-    $form['submit'] = [
-      '#type' => 'submit',
-      '#title' => $this->t('Submit'),
+
+    $form['order_id'] = [
+      '#type' => 'hidden',
+      '#default_value' => $order->id(),
     ];
 
     $form['submit'] = [
-        '#type' => 'submit',
+        '#type' => 'button',
         '#value' => t('Submit'),
+        '#ajax' => [
+          'callback' => array($this, 'submitForm'),
+          'event' => 'click',
+          'progress' => array(
+            'type' => 'throbber',
+            'message' => t('Verifying email...'),
+          ),
+        ],
     ];
 
     return $form;
@@ -54,10 +63,11 @@ class CouponCheckoutForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    // Display result.
-    foreach ($form_state->getValues() as $key => $value) {
-        drupal_set_message($key . ': ' . $value);
-    }
+    db_delete('uc_order_line_items')
+      ->condition('order_id', $form_state->getValue('order_id'))
+      ->condition('type', 'uc_coupon')
+      ->execute();
+    uc_order_line_item_add($form_state->getValue('order_id'), 'uc_coupon', 'Coupon', 1-rand(10,100));
 
   }
 
