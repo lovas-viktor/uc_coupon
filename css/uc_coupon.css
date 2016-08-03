@@ -1,0 +1,18 @@
+#uc_coupon-pane .details-wrapper {
+    overflow: hidden;
+}
+
+#uc_coupon-pane .ajax-progress {
+    margin-top: -5px;
+    float: left;
+}
+#edit-panes-uc-coupon-coupon-code {
+    float: left;
+}
+#edit-panes-uc-coupon-coupon-button {
+    float: left;
+    margin-top: -10px;
+}
+#couponAjaxValidate p {
+    margin-top: -5px;
+}

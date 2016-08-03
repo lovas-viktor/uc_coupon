@@ -1,10 +1,10 @@
 # Coupon menu items definition
 entity.coupon.collection:
-  title: 'Coupon list'
+  title: 'Coupons'
   route_name: entity.coupon.collection
   description: 'List Coupon entities'
-  parent: system.admin_structure
-  weight: 100
+  parent: uc_store.admin.store
+  weight: 0
 
 coupon.admin.structure.settings:
   title: Coupon settings

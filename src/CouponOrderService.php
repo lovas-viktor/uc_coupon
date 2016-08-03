@@ -18,7 +18,7 @@ class CouponOrderService {
 
   public function getCouponDiscountAmount($order,$coupon_code)
   {
-    if($discount = $this->validateCoupon($order,$coupon_code)){
+    if($discount = $this->validateCoupon($coupon_code)){
       if(strstr($discount, '%')){
         $price-=($order->getSubtotal()*((intval($discount)/100)));
       } else {
@@ -50,7 +50,7 @@ class CouponOrderService {
     }
   }
 
-  public function validateCoupon($order,$coupon_code)
+  public function validateCoupon($coupon_code)
   {
     $query = \Drupal::entityQuery('coupon')
       ->condition('status', 1)
@@ -60,7 +60,17 @@ class CouponOrderService {
     if(!$cids){
       return FALSE;
     }
+
     $coupon=entity_load('coupon', reset($cids));
+
+    if($coupon->date_validation->value){
+      if($coupon->valid_from->value>time()){
+        return FALSE;
+      }
+      if($coupon->valid_to->value<time()){
+        return FALSE;
+      }
+    }
 
     return $coupon->discount->value;
   }

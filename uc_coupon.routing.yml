@@ -1,9 +1,2 @@
 
-uc_coupon.coupon_checkout_form:
-  path: '/uc_coupon/form/coupon_checkout'
-  defaults:
-    _form: '\Drupal\uc_coupon\Form\CouponCheckoutForm'
-    _title: 'CouponCheckoutForm'
-  requirements:
-    _access: 'TRUE'
   

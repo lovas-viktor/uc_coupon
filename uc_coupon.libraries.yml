@@ -1,0 +1,5 @@
+uc_coupon:
+  version: 1.x
+  css:
+    theme:
+      css/uc_coupon.css: {}
